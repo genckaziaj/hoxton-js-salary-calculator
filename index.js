@@ -9,7 +9,7 @@ console.log(taxableAmount);
 
 let personIsTaxed = undefined;
 
-if (yourGrossSalary >= 0 && yourGrossSalary) {
+if (yourGrossSalary >= 0 && yourGrossSalary < 80) {
   personIsTaxed = 0 / 100;
 } else if (yourGrossSalary >= 80 && yourGrossSalary < 250) {
   personIsTaxed = 4 / 100;
@@ -24,5 +24,3 @@ console.log(personIsTaxed);
 let takeHomePay = taxableAmount - personIsTaxed * taxableAmount;
 
 console.log(takeHomePay);
-
-// Challenge
